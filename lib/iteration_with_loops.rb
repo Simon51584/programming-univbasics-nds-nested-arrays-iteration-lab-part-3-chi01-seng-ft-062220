@@ -6,10 +6,11 @@ def join_nested_strings(src)
     while element_index < src[row_index] do 
       if src[row_index][element_index].class == String 
       total += src[row_index][element_index] + ''
-      element_index += 1 
     end 
-    row_index += 1 
+    element_index += 1 
   end 
+  row_index += 1 
+end 
   p total 
   # src will be an Array of Arrays of Strings and Integers
   # Combine all Strings present in the AoA into a single value and return it
